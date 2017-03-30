@@ -173,6 +173,7 @@ section input
 {
   color: #767676;
   font-size: 14px;
+  padding: 1em;
 }
 
 .recommande a
@@ -191,7 +192,24 @@ hr
 
 
 /*rules of section class container*/
+h3
+{
+  color: #484848;
+  margin-left: 6em;
+}
 
+.nouveautes , .reserves , .logements , .destination
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container figcaption
+{
+  font-family: serif;
+  font-size: 13px;
+  color: #767676;
+}
 /*end rules of section class container*/
 
 
