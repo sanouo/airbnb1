@@ -210,7 +210,57 @@ h3
   font-size: 13px;
   color: #767676;
 }
+
+.estimer
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.info button
+{
+  background-color: #008489;
+  border-radius: 5px;
+  border-color: #008489;
+  height: 40px;
+  color: white;
+  font-family: Helvetica;
+}
+
+h2
+{
+  color: #484848;
+}
+
+.info
+{
+  margin-left: 6em;
+  margin-top: 4em;
+}
 /*end rules of section class container*/
+
+
+
+/*start of the footer*/
+.ligne
+{
+  width: 100%;
+  margin-left: 0;
+}
+
+.choix
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+select
+{
+  width: 10%;
+  margin-left: 6em;
+}
+/*end of the footer*/
 
 
 
