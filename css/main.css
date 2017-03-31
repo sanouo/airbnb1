@@ -202,6 +202,12 @@ h3
 {
   display: flex;
   justify-content: space-between;
+  margin: auto 5%;
+}
+
+figure{
+  margin: 0;
+  width: 100%;
 }
 
 .container figcaption
@@ -215,6 +221,7 @@ h3
 {
   display: flex;
   justify-content: space-between;
+  margin-top: 2em;
 }
 
 .info button
@@ -255,10 +262,73 @@ h2
   margin-top: 3em;
 }
 
+.end{
+  display: flex;
+}
+
 select
 {
-  width: 10%;
+  width: 50%;
   margin-left: 6em;
+}
+
+.regles ul
+{
+  display: inline-block;
+  margin-left: 3em;
+  text-decoration: none;
+}
+
+.regles h5
+{
+  color: #484848;
+}
+
+.regles li
+{
+  list-style-type: none;
+}
+
+.regles li a
+{
+  color: #484848;
+}
+
+.choix , .regles
+{
+  display: flex;
+  margin-left: 4em;
+}
+
+.fin
+{
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.copyright a , p
+{
+  display: inline-block;
+}
+
+.copyright a
+{
+  display: inline-block;
+  float: right;
+  padding-right: 2em;
+  margin-top: 1em;
+}
+
+.copyright p
+{
+  padding-left: 3em;
+}
+
+.copyright a , .copyright p , .regles ul
+{
+  color: #484848;
+  font-size: 12px;
+  font-family: fantasy;
 }
 /*end of the footer*/
 
