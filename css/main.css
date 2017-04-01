@@ -94,10 +94,130 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /*mobile first*/
+   @media (max-width: 360px)
+   {
+
+     /*rules common*/
+     .top , .menu form , .middle , .regles , .plan
+     {
+       display: none;
+     }
+     /*end rules common*/
+
+    /*rules of the header*/
+     header aside figure img
+     {
+       height: 30px;
+     }
+     /*end rules of the header*/
+
+
+     /*rules of the section*/
+     h1
+     {
+       color: #484848;
+       margin-left: 2em;
+       margin-top: 2em;
+       font-size: 19px;
+     }
+
+     mark
+     {
+       color: #FF5A5F;
+       background-color: white;
+     }
+
+      .mobile
+      {
+        margin-left: 2em;
+        margin-top: 2em;
+      }
+
+      .mobile input
+      {
+      width: 90%;
+      box-shadow: 2px 1px 3px 2px #F5F5F5;
+      }
+     /*end rules of the section*/
+
+     /*rules of the footer*/
+     .copyright a , .copyright p
+     {
+       color: #484848;
+       font-size: 14px;
+       font-family: fantasy;
+       text-decoration: none;
+      margin-left: 2em;
+     }
+
+     .choix
+     {
+       margin-left: 2em;
+     }
+
+     .fin
+     {
+       margin-left: 2em;
+       margin-right: 2em;
+
+     }
+
+     /*end of the footer*/
+
+
+   }
+/*end mobile first*/
+
+
+
+/*version tablette*/
+@media  (max-width:768px){
+/*rules common*/
+.top
+{
+  display: none;
+}
+/*end rules common*/
+
+/*rules header*/
+header aside figure img
+{
+  height: 30px;
+}
+/*end rules header*/
+
+
+/*rules of the section*/
+
+/*end rules of the section*/
+
+
+
+}
+/*end version tablette*/
+
+
+
+
+
+
+@media (min-width:1024px) {
+
+.mobile
+{
+  display: none;
+}
+
 /*rules common*/
 a
 {
   text-decoration: none;
+}
+
+a:hover
+{
+  text-decoration: underline;
 }
 /*end rules common*/
 
@@ -106,6 +226,8 @@ header aside img
 {
   width: 30px;
   margin-top: 0;
+  margin-left: 2em;
+  margin-top: 2em;
 }
 
 header a
@@ -130,6 +252,16 @@ header nav
 {
   float: right;
 }
+
+form
+{
+  display: flex;
+
+}
+.input
+{
+  border: 1px solid;
+}
 /*end rules of the header*/
 
 
@@ -151,7 +283,14 @@ mark
 
 section input
 {
-  margin-left: 7em;
+  width: 65%;
+  height: 2em;
+  border: 0;
+}
+
+.menu input
+{
+
 }
 /*end rules of section class menu*/
 
@@ -331,6 +470,11 @@ select
   font-family: fantasy;
 }
 /*end of the footer*/
+}
+
+
+
+
 
 
 

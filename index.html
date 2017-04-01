@@ -62,13 +62,28 @@
 
 
 
+
         <!-- start of the section -->
         <section class="menu">
           <h1><mark>Ou souhaitez-vous allez?</mark><br>Votre prochain Voyage <br>commence sur Airbnb.</h1>
-          <input type="text" name="ou" value="Ou">
-          <input type="text" name="quand" value="Quand">
-          <input type="text" name="voyageur" value="Voyageur">
+          <form class="" action="index.html" method="post">
+            <div class="input">
+              <input type="text" name="ou" value="Ou">
+            </div>
+            <div class="input">
+              <input type="text" name="quand" value="Quand">
+            </div>
+            <div class="input">
+              <input type="text" name="voyageur" value="Voyageur">
+              <input type="submit" name="" value="recherche">
+            </div>
+          </form>
         </section>
+
+        <!-- nav mobile first -->
+        <form class="mobile" method="post">
+          <input type="text" name="" value="">
+        </form>
         <!-- end of the section -->
 
 
@@ -267,7 +282,7 @@
             <hr class="fin"><p>© Airbnb, Inc.</p>
             <a href="#">Conditions</a>
             <a href="#">Confidentialite</a>
-            <a href="#">Plan du site</a>
+            <a  class="plan"href="#">Plan du site</a>
           </section>
 
         </footer>
