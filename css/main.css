@@ -95,7 +95,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
    /*mobile first*/
-   @media (max-width: 360px)
+   @media (min-width: 360px)
    {
 
      /*rules common*/
@@ -164,19 +164,32 @@ textarea {
      }
 
      /*end of the footer*/
-
-
    }
 /*end mobile first*/
 
 
 
 /*version tablette*/
-@media  (max-width:768px){
+@media  (min-width:768px){
 /*rules common*/
-.top
+a
+{
+  text-decoration: none;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
+.top , .mobile , .bouton
 {
   display: none;
+}
+
+.menu form , .middle , .regles , .plan
+{
+  display: block;
 }
 /*end rules common*/
 
@@ -188,11 +201,150 @@ header aside figure img
 /*end rules header*/
 
 
+/*rules of the section class menu*/
+h1
+{
+  color: #484848;
+  margin-left: 1em;
+  margin-top: 1em;
+  font-size: 43px;
+}
+
+mark
+{
+  color: #FF5A5F;
+  background-color: white;
+}
+/*end rules of the sectio class menu*/
+
+
+
+/*rules of the nav class middle*/
+.middle
+{
+  margin-top: 3em;
+  margin-left: 1em;
+}
+
+.middle li
+{
+  display: inline-block;
+}
+
+.middle a
+{
+  color: #767676;
+  font-size: 14px;
+  padding: 1em;
+}
+
+.recommande a
+{
+  color: #008489;
+  font-family: fantasy;
+}
+
+hr
+{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+/*end rules of the nav class middle*/
+
+
 /*rules of the section*/
 
 /*end rules of the section*/
 
 
+/*start of the footer*/
+.ligne
+{
+  width: 100%;
+  margin-left: 0;
+}
+
+.choix
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+.end{
+  display: flex;
+}
+
+select
+{
+  width: 50%;
+  margin-left: 6em;
+}
+
+.regles ul
+{
+  display: inline-block;
+  margin-left: 3em;
+  text-decoration: none;
+}
+
+.regles h5
+{
+  color: #484848;
+}
+
+.regles li
+{
+  list-style-type: none;
+}
+
+.regles li a
+{
+  color: #484848;
+}
+
+.choix , .regles
+{
+  display: flex;
+  margin-left: 4em;
+}
+
+.fin
+{
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.copyright a , p
+{
+  display: inline-block;
+}
+
+.copyright a
+{
+  display: inline-block;
+  float: right;
+  padding-right: 2em;
+  margin-top: 1em;
+}
+
+.copyright p
+{
+  padding-left: 3em;
+}
+
+.copyright a , .copyright p , .regles ul
+{
+  color: #484848;
+  font-size: 12px;
+  font-family: fantasy;
+}
+
+.end
+{
+  margin-right: 8em;
+}
+/*end of the footer*/
 
 }
 /*end version tablette*/
@@ -286,11 +438,6 @@ section input
   width: 65%;
   height: 2em;
   border: 0;
-}
-
-.menu input
-{
-
 }
 /*end rules of section class menu*/
 
