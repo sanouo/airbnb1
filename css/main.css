@@ -277,8 +277,7 @@ hr
 
 select
 {
-  width: 50%;
-  margin-left: 6em;
+  width: 5em;
 }
 
 .regles ul
@@ -359,6 +358,11 @@ select
 .mobile
 {
   display: none;
+}
+
+.top , .bouton
+{
+  display: block;
 }
 
 /*rules common*/
