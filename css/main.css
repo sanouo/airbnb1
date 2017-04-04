@@ -99,7 +99,7 @@ textarea {
    {
 
      /*rules common*/
-     .top , .menu form , .middle , .regles , .plan
+     .top , .menu form , .middle , .regles , .plan , .pc , .tablette
      {
        display: none;
      }
@@ -114,6 +114,11 @@ textarea {
 
 
      /*rules of the section*/
+     .input
+     {
+       display: inline-block;
+     }
+
      h1
      {
        color: #484848;
@@ -138,6 +143,23 @@ textarea {
       {
       width: 90%;
       box-shadow: 2px 1px 3px 2px #F5F5F5;
+      }
+
+      .nouveautes , .reserves , .logements , .destination
+      {
+        display: flex;
+        justify-content: space-between;
+        margin: auto 5%;
+      }
+
+      .info button
+      {
+        background-color: #008489;
+        border-radius: 5px;
+        border-color: #008489;
+        height: 40px;
+        color: white;
+        font-family: Helvetica;
       }
      /*end rules of the section*/
 
@@ -182,12 +204,12 @@ a:hover
   text-decoration: underline;
 }
 
-.top , .mobile , .bouton
+.top , .mobile , .bouton , .pc
 {
   display: none;
 }
 
-.menu form , .middle , .regles , .plan
+.menu form , .middle , .regles , .plan , .tablette
 {
   display: block;
 }
@@ -253,7 +275,22 @@ hr
 
 
 /*rules of the section*/
+.nouveautes , .reserves , .logements , .destination
+{
+  display: flex;
+  justify-content: space-between;
+  margin: auto 5%;
+}
 
+.info button
+{
+  background-color: #008489;
+  border-radius: 5px;
+  border-color: #008489;
+  height: 40px;
+  color: white;
+  font-family: Helvetica;
+}
 /*end rules of the section*/
 
 
@@ -359,7 +396,7 @@ select
   display: none;
 }
 
-.top , .bouton
+.top , .bouton , .pc , .tablette
 {
   display: block;
 }
@@ -442,6 +479,23 @@ section input
   height: 2em;
   border: 0;
 }
+
+.menu
+{
+  margin-left: 5em;
+}
+
+.input 
+{
+  display: inline-block;
+  height: 20%;
+}
+
+div .input
+{
+  height: 30%;
+}
+
 /*end rules of section class menu*/
 
 
